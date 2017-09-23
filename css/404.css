@@ -1,0 +1,48 @@
+@font-face {
+	font-family: BrandonLight;
+	src: url("../fonts/Brandon_light.otf");
+}
+@font-face {
+	font-family: BrandonBalck;
+	src: url("../fonts/Brandon_blk.otf");
+}
+@font-face {
+	font-family: BrandonPrinted;
+	src: url("../fonts/BrandonPrinted-Inline.otf");
+}
+@font-face {
+	font-family: BrandonMed;
+	src: url("../fonts/Brandon_med.otf");
+}
+@font-face {
+	font-family: BrandonBold;
+	src: url("../fonts/Brandon_bld.otf");
+}
+body {
+	margin-top: 50px;
+}
+img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+h1{
+	font-family: BrandonBold;
+	text-align: center;
+	font-size: 62px;
+	margin-top:70px;
+	margin-bottom: 70px;
+}
+p {
+	font-family: BrandonLight;
+	font-size: 18px;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	/*margin-top: 50px;*/
+}
+a {
+	text-decoration: none;
+	color: #000;
+	font-family: BrandonMed;
+}
