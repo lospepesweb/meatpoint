@@ -1,0 +1,5 @@
+AddHandler x-httpd-php7 .php
+ErrorDocument 404 /404.html
+RewriteEngine On	
+RewriteCond %{HTTP_HOST} ^meatpoint-sj.com [NC]
+RewriteRule ^(.*)$ http://www.meatpoint-sj.com/$1 [L,R=301]
