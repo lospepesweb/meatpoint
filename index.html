@@ -26,8 +26,8 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-<!-- 	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" /> -->
 	<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+	<!-- Scripts -->
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
@@ -103,9 +103,11 @@
 					<img src="img/foodtruck.png" class="img-responsive" alt="Foodtruck">
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-					<h1>EL FOOD TRUCK</h1>
-					<p>Nuestra especialidad es el <strong>sanguche de asado</strong>; y nuestra virtud<br class="hidden-xs hidden-sm hidden-md"> que nos movemos a donde quiera que estés.</p>
-					<p>En <strong>MEAT POINT</strong> nos encanta darle a las cosas sencillas su toque gourmet, nos enfocamos en cada detalle y nos preocupamos por cuidar la calidad que nos caracterizó desde el primer día que nos presentamos.</p>
+					<div itemscope itemtype="http://schema.org/Restaurant">
+						<h1>EL FOOD TRUCK</h1>
+						<p>Nuestra especialidad es el <strong><span itemprop="servesCuisine">sanguche de asado</strong></span>; y nuestra virtud<br class="hidden-xs hidden-sm hidden-md"> que nos movemos a donde quiera que estés.</p>
+						<p>En <strong><span itemprop="name">MEAT POINT</span></strong> nos encanta darle a las cosas sencillas su toque gourmet, nos enfocamos en cada detalle y nos preocupamos por cuidar la calidad que nos caracterizó desde el primer día que nos presentamos.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -183,7 +185,14 @@
 
 	<section id="galeria" class="galeria">
 		<div class="container-fuild">
-			<div class="col-xs-12 col-sm-6 col-lg-6 imgGaleria"><div class="img1"></div></div>
+			<div class="col-xs-12 col-sm-6 col-lg-6 imgGaleria">
+				<div class="img1">
+					<!-- Eliminar este figure en caso de que no resulte la galeria -->
+					<figure>
+						<img class="img-responsive" src="img/sangucheEntrana.jpg" alt="Sanguche de Entraña">
+					</figure>
+				</div>
+			</div>
 			<div class="col-xs-6 col-sm-3 col-lg-3 imgGaleria"><div class="img2"></div></div>
 			<div class="hidden-xs col-sm-3 col-lg-3 imgGaleria"><div class="img3"></div></div>
 			<div class="col-xs-6 hidden-sm hidden-lg hidden-md imgGaleria"><div class="img3bis"></div></div>
@@ -214,11 +223,13 @@
 	<section class="contacto">
 		<div class="container" id="contacto">
 			<div class="col-md-3 col-lg-3 info">
-				<h2>INFO</h2>
-				<p>264 528 5172</p>
-				<p><a href="mailto:info@meatpoint-sj.com">info@meatpoint-sj.com</a></p>
-				<p><span class="icon-facebook2"></span> <a href="https://www.facebook.com/meatpoint.sj/?fref=ts" target="_blank">Meat Point SJ</a></p>
-				<p><span class="icon-instagram"></span> <a href="https://www.instagram.com/meatpoint.sj/" target="_blank" class="instagramMP">Meatpoint.sj</a></p>
+				<div itemscope itemtype="http://schema.org/Restaurant">
+					<h2>INFO</h2>
+					<p><span itemprop="telephone">264 528 5172</span></p>
+					<p><a href="mailto:info@meatpoint-sj.com"><span itemprop="email">info@meatpoint-sj.com</span></a></p>
+					<p><span class="icon-facebook2"></span> <a href="https://www.facebook.com/meatpoint.sj/?fref=ts" target="_blank">Meat Point SJ</a></p>
+					<p><span class="icon-instagram"></span> <a href="https://www.instagram.com/meatpoint.sj/" target="_blank" class="instagramMP">Meatpoint.sj</a></p>
+				</div>
 			</div>
 
 			<div class="col-md-9 col-lg-6">
@@ -366,7 +377,7 @@
 	</script>
 	<span class="ir-arriba"></span>
 	<script src="js/jquery-3.1.1.js"></script>
-	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function(){

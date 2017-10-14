@@ -233,8 +233,13 @@ span.linea {
 	background-position: center center;
 }
 .img1 {
-	background-image: url("../img/6.jpg");
+	/*background-image: url("../img/6.jpg");*/
 	margin-right: 10px;
+	overflow: hidden;
+}
+.img1 img {
+	position: relative;
+	min-height: 300px;
 }
 .img2 {
 	background-image: url("../img/10.jpg");
@@ -289,6 +294,9 @@ span.linea {
 	.img8,
 	.img9 {
 		height: 150px;
+	}
+	.img1 img {
+		top: -100px;
 	}
 	.img6 {
 		margin-right: 10px;
