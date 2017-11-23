@@ -3,3 +3,9 @@ ErrorDocument 404 /404.html
 RewriteEngine On	
 RewriteCond %{HTTP_HOST} ^meatpoint-sj.com [NC]
 RewriteRule ^(.*)$ http://www.meatpoint-sj.com/$1 [L,R=301]
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 1 year"
+ExpiresByType text/css "access plus 1 week"
+</IfModule>
